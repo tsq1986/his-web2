@@ -30,11 +30,13 @@
                     :key="item.name"
                     :label="item.title"
                     :name="item.name"
-                    :path="item.path"
-            >
-              {{item.content}}
+                    :path="item.path">
+
             </el-tab-pane>
           </el-tabs>
+          <div>
+
+          </div>
           <router-view></router-view>
         </el-main>
       </el-container>
@@ -67,7 +69,7 @@ export default {
       }
       let newTabName = ++this.tabIndex + '';
       this.editableTabs.push({
-        title: 'New Tab',
+        title: title,
         name: newTabName,
         path:this.$route.path
       });
