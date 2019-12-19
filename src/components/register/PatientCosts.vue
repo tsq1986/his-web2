@@ -90,7 +90,8 @@
                     createTime:''
                 }
             }
-        }
+        },
+        methods:{}
     }
 </script>
 
