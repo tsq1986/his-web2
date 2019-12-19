@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Login from "../views/Login";
+import UserManage from "../components/system/UserManage";
 
 Vue.use(VueRouter)
 
@@ -46,7 +47,16 @@ const routes = [
        meta:{
          title:'常数类别管理'
        }
-    }]
+    },
+      {
+        path:'/User',
+        name:'UserManage',
+        component:UserManage,
+        meta:{
+          title:'用户管理'
+        }
+      }
+    ]
   }
 
 
