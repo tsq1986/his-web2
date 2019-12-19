@@ -34,9 +34,7 @@
 
             </el-tab-pane>
           </el-tabs>
-          <div>
-            <h3>欢迎登录东软云HIS医疗系统</h3>
-          </div>
+
           <router-view></router-view>
         </el-main>
       </el-container>

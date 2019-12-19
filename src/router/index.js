@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Login from "../views/Login";
 import UserManage from "../components/system/UserManage";
+import PatientCosts from "../components/register/PatientCosts";
 
 Vue.use(VueRouter)
 
@@ -32,7 +33,16 @@ const routes = [
       meta:{
         title:'现场挂号'
       }
-    }]
+    },
+      {
+        path:'/PatientCosts',
+        name:'patientCosts',
+        component:PatientCosts,
+        meta:{
+          title:'患者费用查询'
+        }
+      }
+    ]
   },
   {
     path:'/home',
